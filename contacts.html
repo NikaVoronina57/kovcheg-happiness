@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты фонда</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <header>
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Ковчег счастья</a>
+    
+    <!-- ДОБАВИТЬ ЭТУ КНОПКУ -->
+    <button class="hamburger-btn" aria-label="Меню">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <!-- И ОБЁРТКУ main-nav ВОКРУГ nav -->
+    <nav id="main-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="o_project.html">О проекте</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+      </ul>
+    </nav>
+
+    <button id="open-cart-btn" class="cart-btn">Корзина <span id="cart-count"></span></button>
+  </div>
+</header>
+
+  <main class="container">
+
+    <!-- Заголовок страницы -->
+    <section class="hero-contacts">
+      <h1>Контакты фонда</h1>
+      <p>Мы всегда рады ответить на ваши вопросы и рассказать подробнее о наших проектах.</p>
+    </section>
+
+    <!-- Карточки с контактами -->
+    <section>
+      <div class="contacts-grid">
+        <!-- Адрес -->
+        <article class="contact-card">
+          <span class="contact-icon">📍</span>
+          <h3 class="contact-label">Юридический адрес</h3>
+          <p class="contact-value">140130, Московская область, Раменский район, г.п. Кратово, пос. Кратово, ул. Молодцова, д. 21‑а</p>
+        </article>
+
+        <!-- Телефон 1 -->
+        <article class="contact-card">
+          <span class="contact-icon">📞</span>
+          <h3 class="contact-label">Телефон</h3>
+          <p class="contact-value">8 (903) 139‑51‑58</p>
+        </article>
+
+        <!-- Телефон 2 -->
+        <article class="contact-card">
+          <span class="contact-icon">📞</span>
+          <h3 class="contact-label">Городской телефон</h3>
+          <p class="contact-value">8‑496‑462‑62‑02</p>
+        </article>
+
+        <!-- Email -->
+        <article class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <h3 class="contact-label">Электронная почта</h3>
+          <p class="contact-value"><a href="mailto:jany@mail.ru" class="email-link">jany@mail.ru</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Блок карты (заглушка: сюда потом можно вставить iframe от Яндекс Карт или Google Maps) -->
+    <section>
+      <h2 class="section-title" style="text-align:center;">Где мы находимся</h2>
+      <div class="map-block">
+        <div class="map-placeholder">
+          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_molodtsova_21a/Z04YcARgSE0CQFtvfXR2dnplZg==/?ll=37.630184%2C55.877662&utm_medium=mapframe&utm_source=maps&z=16.69" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Молодцова, 21А — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.630184%2C55.877662&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njc5NTMxNxI_0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINGD0LvQuNGG0LAg0JzQvtC70L7QtNGG0L7QstCwLCAyMdCQIgoNToUWQhW6gl9C&z=16.69" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section>
+      <h2 class="section-title">Напишите нам</h2>
+      <form class="feedback-form" action="#" method="POST">
+        <div class="form-group">
+          <label class="form-label" for="name">Ваше имя</label>
+          <input type="text" id="name" name="name" class="form-input" required placeholder="Иван Иванов" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email для ответа</label>
+          <input type="email" id="email" name="email" class="form-input" required placeholder="example@mail.ru" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Сообщение</label>
+          <textarea id="message" name="message" class="form-textarea" required placeholder="Расскажите, чем можем помочь?"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Отправить сообщение</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+      <p>&copy; 2024 Благотворительный фонд «Наследие Отечества». Все права защищены.</p>
+      <a href="#" class="accessibility-link">Версия для слабовидящих</a>
+    </div>
+  </footer>
+
+  <!-- Модальное окно корзины (чтобы JS работал одинаково на всех страницах) -->
+  <div class="modal-overlay" id="cart-modal">
+    <div class="cart-modal">
+      <div class="cart-header">
+        <h2>Корзина</h2>
+        <button class="close-cart-btn" id="close-cart-btn">&times;</button>
+      </div>
+      <div id="cart-items-list">
+        <p style="color: var(--text-secondary);">Корзина пуста</p>
+      </div>
+      <div class="cart-total-row">
+        <span>Итого:</span>
+        <span id="cart-total-amount">0 ₽</span>
+      </div>
+      <button class="checkout-final-btn">Оформить заказ</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+

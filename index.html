@@ -1,0 +1,177 @@
+         
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ковчег счастья — магазин добрых работ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Ковчег счастья</a>
+    
+    <!-- ДОБАВИТЬ ЭТУ КНОПКУ -->
+    <button class="hamburger-btn" aria-label="Меню">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <!-- И ОБЁРТКУ main-nav ВОКРУГ nav -->
+    <nav id="main-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="o_project.html">О проекте</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+      </ul>
+    </nav>
+
+    <button id="open-cart-btn" class="cart-btn">Корзина <span id="cart-count"></span></button>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Ковчег счастья — место, где важен каждый труд</h1>
+      <p>Покупайте с добром: каждая покупка помогает авторам и поддерживает их творчество.</p>
+      <a href="catalog.html" class="btn-primary">Перейти в каталог</a>
+
+    </section>
+
+    <section>
+      <h2 class="section-title">Новинки</h2>
+      <div class="products-grid">
+        <!-- Товар 1 -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="https://via.placeholder.com/400x300" alt="Керамическая чашка ручной работы" class="product-img">
+          </div>
+          <h3 class="product-title">Чашка «Утренний свет»</h3>
+          <p class="product-price">1 200 ₽</p>
+          <button class="add-to-cart" data-id="1">В корзину</button>
+        </article>
+
+        <!-- Товар 2 -->
+        <article class="product-card">
+                    <div class="product-img-wrapper">
+            <img src="https://via.placeholder.com/400x300" alt="Вышитая салфетка с цветочным узором" class="product-img">
+          </div>
+          <h3 class="product-title">Салфетка «Цветы лета»</h3>
+          <p class="product-price">850 ₽</p>
+          <button class="add-to-cart" data-id="2">В корзину</button>
+        </article>
+
+        <!-- Товар 3 -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="https://via.placeholder.com/400x300" alt="Деревянная фигурка птицы" class="product-img">
+          </div>
+          <h3 class="product-title">Фигурка «Птица счастья»</h3>
+          <p class="product-price">2 100 ₽</p>
+          <button class="add-to-cart" data-id="3">В корзину</button>
+        </article>
+
+        <!-- Товар 4 -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="https://via.placeholder.com/400x300" alt="Браслет из натуральных камней" class="product-img">
+          </div>
+          <h3 class="product-title">Браслет «Гармония»</h3>
+          <p class="product-price">990 ₽</p>
+          <button class="add-to-cart" data-id="4">В корзину</button>
+        </article>
+
+        <!-- Товар 5 -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="https://via.placeholder.com/400x300" alt="Керамическая тарелка с росписью" class="product-img">
+          </div>
+          <h3 class="product-title">Тарелка «Рассвет»</h3>
+          <p class="product-price">1 500 ₽</p>
+          <button class="add-to-cart" data-id="5">В корзину</button>
+        </article>
+
+        <!-- Товар 6 -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="https://via.placeholder.com/400x300" alt="Текстильная игрушка-сова" class="product-img">
+          </div>
+          <h3 class="product-title">Игрушка «Сова-обнимашка»</h3>
+          <p class="product-price">1 350 ₽</p>
+          <button class="add-to-cart" data-id="6">В корзину</button>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Истории авторов</h2>
+      <div class="authors-grid">
+        <!-- Автор 1 -->
+        <div class="author-card">
+          <div class="author-photo-wrapper">
+            <img src="https://via.placeholder.com/80x80" alt="Фото автора" class="author-photo">
+          </div>
+          <h3 class="author-name">Анна Петрова</h3>
+          <p class="author-bio">История подопечного</p>
+          <button class="btn-outline">Узнать больше</button>
+        </div>
+
+        <!-- Автор 2 -->
+        <div class="author-card">
+          <div class="author-photo-wrapper">
+            <img src="https://via.placeholder.com/80x80" alt="Фото автора" class="author-photo">
+          </div>
+          <h3 class="author-name">Михаил Соколов</h3>
+          <p class="author-bio">История подопечного</p>
+          <button class="btn-outline">Узнать больше</button>
+        </div>
+
+        <!-- Автор 3 -->
+        <div class="author-card">
+          <div class="author-photo-wrapper">
+            <img src="https://via.placeholder.com/80x80" alt="Фото автора" class="author-photo">
+          </div>
+          <h3 class="author-name">Елена Васильева</h3>
+          <p class="author-bio">История подопечного</p>
+          <button class="btn-outline">Узнать больше</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+      <p>&copy; 2024 Ковчег счастья. Все права защищены.</p>
+      <a href="#" class="accessibility-link">Версия для слабовидящих</a>
+    </div>
+  </footer>
+
+  <!-- Модальное окно корзины -->
+  <div class="modal-overlay" id="cart-modal">
+    <div class="cart-modal">
+      <div class="cart-header">
+        <h2>Корзина</h2>
+        <button class="close-cart-btn" id="close-cart-btn">&times;</button>
+      </div>
+      <div id="cart-items-list">
+        <p style="color: var(--text-secondary);">Корзина пуста</p>
+      </div>
+      <div class="cart-total-row">
+        <span>Итого:</span>
+        <span id="cart-total-amount">0 ₽</span>
+      </div>
+      <button class="checkout-final-btn">Оформить заказ</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

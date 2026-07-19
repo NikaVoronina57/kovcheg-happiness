@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Фотогалерея — Ковчег счастья</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Ковчег счастья</a>
+    
+    <!-- ДОБАВИТЬ ЭТУ КНОПКУ -->
+    <button class="hamburger-btn" aria-label="Меню">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <!-- И ОБЁРТКУ main-nav ВОКРУГ nav -->
+    <nav id="main-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="o_project.html">О проекте</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+      </ul>
+    </nav>
+
+    <button id="open-cart-btn" class="cart-btn">Корзина <span id="cart-count"></span></button>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Фотогалерея</h1>
+      <p>Моменты, люди и творчество — всё, что делает «Ковчег счастья» живым.</p>
+    </section>
+
+    <div class="gallery-grid">
+      <!-- 10 карточек под фото -->
+      <div class="gallery-item">
+        <img src="album/1.JPG" alt="Фото 1" class="gallery-img">
+      </div>
+      <div class="gallery-item">
+        <img src="album/2.JPG" alt="Фото 2" class="gallery-img">
+      </div>
+      <div class="gallery-item">
+        <img src="album/3.JPG" alt="Фото 3" class="gallery-img">
+      </div>
+      <div class="gallery-item">
+        <img src="album/4.JPG" alt="Фото 4" class="gallery-img">
+      </div>
+      <div class="gallery-item">
+        <img src="album/5.JPG" alt="Фото 5" class="gallery-img">
+      </div>
+      <div class="gallery-item">
+        <img src="album/6.JPG" alt="Фото 6" class="gallery-img">
+      </div>
+      <div class="gallery-item">
+        <img src="album/7.JPG" alt="Фото 7" class="gallery-img">
+      </div>
+      <div class="gallery-item">
+        <img src="album/8.JPG" alt="Фото 8" class="gallery-img">
+      </div>
+      <div class="gallery-item">
+        <img src="album/9.JPG" alt="Фото 9" class="gallery-img">
+      </div>
+      <div class="gallery-item">
+        <img src="album/10.JPG" alt="Фото 10" class="gallery-img">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+      <p>&copy; 2024 Ковчег счастья. Все права защищены.</p>
+      <a href="#" class="accessibility-link">Версия для слабовидящих</a>
+    </div>
+  </footer>
+
+  <!-- Модальное окно корзины -->
+  <div class="modal-overlay" id="cart-modal">
+    <div class="cart-modal">
+      <div class="cart-header">
+        <h2>Корзина</h2>
+        <button class="close-cart-btn" id="close-cart-btn">&times;</button>
+      </div>
+      <div id="cart-items-list">
+        <p style="color: var(--text-secondary);">Корзина пуста</p>
+      </div>
+      <div class="cart-total-row">
+        <span>Итого:</span>
+        <span id="cart-total-amount">0 ₽</span>
+      </div>
+      <button class="checkout-final-btn">Оформить заказ</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
